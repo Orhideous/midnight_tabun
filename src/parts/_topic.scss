@@ -1,0 +1,31 @@
+@import "../utils/colors";
+@import "../utils/mixins";
+
+article.topic {
+  &, & div {
+    @include shadowboxed;
+  }
+  .topic-header, .topic-content, .topic-footer {
+    @include padded;
+  }
+  a[title="Читать дальше"] {
+    @include dark-bg;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.15em dashed $plum;
+    color: $plum-highlight;
+  }
+  .topic-info-comments {
+    a {
+      text-decoration: none;
+    }
+    span {
+      text-decoration: none !important;
+      color: $chameleon !important;
+    }
+    span.count {
+      @extend span;
+      color: $chocolate-highlight !important;
+    }
+  }
+}
