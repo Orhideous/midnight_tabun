@@ -5,6 +5,7 @@
   @include no-bg;
 
   .comment-content {
+    background: $slate-dark;
     border-color: $slate;
   }
 
@@ -13,26 +14,24 @@
       height: 0.9em;
     }
   }
-}
 
-.comment.comment-new {
-  .comment-content {
-    background: $chameleon-dark;
-    border-color: $chameleon-shadow;
+  &.comment-new {
+    .comment-content {
+      background: $chameleon-dark;
+    }
   }
-}
 
-.comment.comment-self {
-  .comment-content {
-    background: $scarlet-red-dark;
-    border-color: $scarlet-red-shadow;
+  &.comment-self {
+    .comment-content {
+      background: $scarlet-red-dark;
+    }
   }
-}
 
-.comment.comment-current {
-  .comment-content {
-    background: $slate;
-    border-color: $slate-highlight;
+  &.comment-current {
+    .comment-content {
+      background: $slate;
+      border-color: $slate-highlight;
+    }
   }
 }
 
