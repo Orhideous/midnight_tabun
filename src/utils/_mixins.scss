@@ -1,0 +1,17 @@
+@import "tango-colors";
+
+@mixin text-color {
+  color: $aluminium;
+}
+
+@mixin dark-bg {
+  background: $slate-shadow;
+}
+
+@mixin no-bg {
+  background: none !important;
+}
+
+@mixin hidden {
+   display: none !important;
+}
