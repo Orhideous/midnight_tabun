@@ -1,10 +1,11 @@
+@import "../utils/colors";
 @import "../utils/mixins";
 
 .comment {
   @include no-bg;
 
   .comment-content {
-    @include no-bg;
+    // @include no-bg;
     border-color: $slate;
   }
 
@@ -13,23 +14,30 @@
       height: 0.8em;
     }
   }
+}
 
-  .comment-new {
-    .comment-content {
-      @include no-bg;
-      border-color: $chameleon-shadow;
-    }
+.comment.comment-new {
+  .comment-content {
+    background: $chameleon-dark;
+    border-color: $chameleon-shadow;
   }
+}
 
-  .comment-self {
-    .comment-content {
-      @include no-bg;
-      border-color: $scarlet-red-shadow;
-    }
+.comment.comment-self {
+  .comment-content {
+    background: $scarlet-red-dark;
+    border-color: $scarlet-red-shadow;
   }
+}
 
-  .comment-author a {
-    color: $aluminium-highlight !important;
-    text-decoration: none;
+.comment.comment-current {
+  .comment-content {
+    background: $slate;
+    border-color: $slate-highlight;
   }
+}
+
+.comment-author a {
+  color: $aluminium-highlight !important;
+  text-decoration: none;
 }
