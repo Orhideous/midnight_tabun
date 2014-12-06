@@ -18,8 +18,19 @@ img {
 }
 
 blockquote {
-  background: $slate-highlight!important;
+  background: $slate-highlight !important;
 }
+
 pre {
-  background: inherit!important;
+  background: inherit !important;
+}
+
+li.active a {
+  color: $chocolate-highlight !important;
+}
+
+nav, .nav {
+  a {
+    text-decoration: none;
+  }
 }
