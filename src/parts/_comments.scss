@@ -2,27 +2,34 @@
 
 .comment {
   @include no-bg;
+
   .comment-content {
     @include no-bg;
     border-color: $slate;
   }
-}
 
-
-.comment-new {
-  .comment-content {
-    @include no-bg;
-    border-color: $chameleon-shadow;
+  .comment-info {
+    li {
+      height: 0.8em;
+    }
   }
-}
 
-.comment-self {
-  .comment-content {
-    @include no-bg;
-    border-color: $scarlet-red-shadow;
+  .comment-new {
+    .comment-content {
+      @include no-bg;
+      border-color: $chameleon-shadow;
+    }
   }
-}
 
-.comment-author a {
-  @include text-color;
+  .comment-self {
+    .comment-content {
+      @include no-bg;
+      border-color: $scarlet-red-shadow;
+    }
+  }
+
+  .comment-author a {
+    color: $aluminium-highlight !important;
+    text-decoration: none;
+  }
 }
