@@ -1,0 +1,23 @@
+@import "../utils/colors";
+@import "../utils/mixins";
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $aluminium !important;
+}
+
+a {
+  color: $sky-blue;
+}
+
+a:hover {
+  color: $sky-blue-highlight !important;
+}
+
+img {
+  opacity: 0.55;
+}
+
+blockquote {
+  background: $slate-highlight!important;
+}

@@ -5,13 +5,12 @@
   @include no-bg;
 
   .comment-content {
-    // @include no-bg;
     border-color: $slate;
   }
 
   .comment-info {
     li {
-      height: 0.8em;
+      height: 0.9em;
     }
   }
 }
