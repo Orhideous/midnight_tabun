@@ -6,5 +6,7 @@ Dark theme for tabun.everypony.ru
 Installation
 ------------
 
-Compile::
+
+Compile:
+
     compass compile
