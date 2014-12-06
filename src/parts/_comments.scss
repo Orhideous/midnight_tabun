@@ -5,8 +5,7 @@
   @include no-bg;
 
   .comment-content {
-    background: $slate-dark;
-    border-color: $slate;
+    @include shadowboxed;
   }
 
   .comment-info {
@@ -36,6 +35,6 @@
 }
 
 .comment-author a {
-  color: $aluminium-highlight !important;
+  color: $chocolate-highlight !important;
   text-decoration: none;
 }

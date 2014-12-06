@@ -13,5 +13,15 @@
 }
 
 @mixin hidden {
-   display: none !important;
+  display: none !important;
+}
+
+@mixin shadowboxed {
+  background: $slate-dark !important;
+  border-color: $slate !important;
+  border-radius: 0.4em;
+}
+
+@mixin padded {
+  padding: 0.5em;
 }
