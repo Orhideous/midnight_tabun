@@ -1,4 +1,4 @@
-@import "tango-colors";
+@import "colors";
 
 @mixin text-color {
   color: $aluminium;
@@ -9,7 +9,7 @@
 }
 
 @mixin no-bg {
-  background: none !important;
+  background: none;
 }
 
 @mixin hidden {
