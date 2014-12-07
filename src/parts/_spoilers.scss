@@ -1,11 +1,15 @@
 @import "colors";
 
-.spoiler-title, .spoiler-gray {
-  background: $slate;
+.spoiler-title {
+  @include greyboxed;
 }
+
 .spoiler-gray {
-  color: $slate;
-}
-.spoiler-gray:hover {
-  color: inherit;
+  & {
+    background: $slate;
+    color: $slate;
+  }
+  &:hover {
+    color: inherit;
+  }
 }
