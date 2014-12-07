@@ -17,19 +17,19 @@
 
   &.comment-new {
     .comment-content {
-      background: $chameleon-dark;
+      background: $chameleon-dark !important;
     }
   }
 
   &.comment-self {
     .comment-content {
-      background: $scarlet-red-dark;
+      background: $scarlet-red-dark !important;
     }
   }
 
   &.comment-current {
     .comment-content {
-      background: $slate;
+      background: $slate !important;
       border-color: $slate-highlight;
     }
   }
@@ -41,7 +41,7 @@
 }
 
 .comment-preview {
-  background: $slate;
+  background: $slate !important;
   border-color: $slate-highlight;
   @include rounded;
 }
