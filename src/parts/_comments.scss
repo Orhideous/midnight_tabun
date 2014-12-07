@@ -41,7 +41,7 @@
 }
 
 .comment-author a {
-  color: $chocolate-highlight !important;
+  @include text-color;
   text-decoration: none;
 }
 
