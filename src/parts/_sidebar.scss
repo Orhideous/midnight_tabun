@@ -3,7 +3,17 @@
 
 aside {
   a {
-    color: $aluminium-shadow !important;
+    &, &:visited {
+      color: $aluminium-shadow !important;
+    }
+    &.author {
+      &, &:visited {
+        color: $sky-blue-light !important;
+      }
+    }
+  }
+  span.block-item-comments {
+    color: $chameleon-highlight !important;
   }
   section, #block_blogs {
     @include darkboxed;
