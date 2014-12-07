@@ -1,0 +1,12 @@
+@import "mixins";
+
+.profile-dotted-list {
+  li {
+    span, strong {
+      @include inh-bg;
+    }
+  }
+}
+.profile-info-about{
+  @include text-color;
+}

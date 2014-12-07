@@ -4,6 +4,10 @@
   @include greyboxed;
 }
 
+.comment-current .comment-content .spoiler-title {
+  @include darkboxed;
+}
+
 .spoiler-gray {
   & {
     background: $slate;

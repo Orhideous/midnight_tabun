@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   &, &:visited {
-    color: $sky-blue-light;
+    color: $sky-blue-light!important;
   }
   &:hover {
     color: $sky-blue-highlight !important;
