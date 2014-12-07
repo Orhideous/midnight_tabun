@@ -16,12 +16,20 @@
   display: none !important;
 }
 
-@mixin shadowboxed {
+@mixin darkboxed {
   background: $slate-dark !important;
   border-color: $slate !important;
+}
+
+@mixin lightboxed {
+  background: $slate-highlight !important;
+  border-color: $slate !important;
+}
+
+@mixin rounded {
   border-radius: 0.4em;
 }
 
 @mixin padded {
-  padding: 0.5em;
+  padding: 0.4em;
 }

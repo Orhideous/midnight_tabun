@@ -1,1 +1,5 @@
 @import "../utils/mixins";
+
+.markItUpHeader {
+  @include lightboxed;
+}

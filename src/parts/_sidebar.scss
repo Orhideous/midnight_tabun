@@ -6,7 +6,8 @@ aside {
     color: $aluminium-shadow !important;
   }
   section, #block_blogs {
-    @include shadowboxed;
+    @include darkboxed;
+    @include rounded;
     border-bottom: none !important;
     margin: 1em;
   }

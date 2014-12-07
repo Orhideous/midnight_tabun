@@ -5,7 +5,8 @@
   @include no-bg;
 
   .comment-content {
-    @include shadowboxed;
+    @include darkboxed;
+    @include rounded;
   }
 
   .comment-info {

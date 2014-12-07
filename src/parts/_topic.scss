@@ -3,7 +3,8 @@
 
 article.topic {
   &, & div {
-    @include shadowboxed;
+    @include darkboxed;
+    @include rounded;
   }
   .topic-header, .topic-content, .topic-footer {
     @include padded;
