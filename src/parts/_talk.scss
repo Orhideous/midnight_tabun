@@ -1,0 +1,12 @@
+@import "mixins";
+
+#block_talk_search, #block_talk_search_content  {
+  @include darkboxed;
+  header {
+    border: none!important;
+  }
+  .talk-search-content {
+    padding-top: 0;
+    border: none;
+  }
+}
