@@ -22,7 +22,11 @@ img {
 }
 
 blockquote {
-  background: $slate-highlight !important;
+  @include text-color;
+  background: $slate !important;
+  border: 2px dashed $slate-highlight !important;
+  border-left: 5px solid $aluminium-shadow !important;
+
 }
 
 pre, ul, li {
