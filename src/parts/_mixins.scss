@@ -26,7 +26,7 @@
 }
 
 @mixin greyboxed {
-  background: $slate !important;
+  background: $slate;
   border-color: $slate-shadow !important;
 }
 
