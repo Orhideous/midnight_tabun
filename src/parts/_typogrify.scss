@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   &, &:visited {
-    color: $sky-blue-light!important;
+    color: $sky-blue-light !important;
   }
   &:hover {
     color: $sky-blue-highlight !important;
@@ -23,7 +23,6 @@ blockquote {
   background: $slate !important;
   border: 2px dashed $slate-highlight !important;
   border-left: 5px solid $aluminium-shadow !important;
-
 }
 
 pre, ul, li {
@@ -41,6 +40,7 @@ nav, .nav {
     text-decoration: none;
   }
 }
-textarea {
-  background-color: inherit!important;
+
+textarea, input {
+  background-color: inherit !important;
 }
