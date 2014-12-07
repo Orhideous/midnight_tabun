@@ -1,0 +1,16 @@
+@import "../utils/colors";
+@import "../utils/mixins";
+
+button {
+  & {
+    @include rounded;
+    @include text-color;
+  }
+  &.button {
+    @include darkboxed;
+  }
+  &.button-primary {
+    background: $sky-blue-shadow !important;
+    border-color: $sky-blue !important;
+  }
+}
