@@ -9,8 +9,10 @@ button {
   &.button {
     @include greyboxed;
   }
-  &.button-primary {
-    background: $sky-blue-shadow !important;
-    border-color: $sky-blue !important;
+  &.button-primary, &.button-action {
+    &.active, &:hover {
+      background: $sky-blue-shadow !important;
+      border-color: $sky-blue !important;
+    }
   }
 }

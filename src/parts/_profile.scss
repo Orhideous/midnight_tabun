@@ -1,4 +1,5 @@
 @import "mixins";
+@import "colors";
 
 .profile-dotted-list {
   li {
@@ -9,4 +10,14 @@
 }
 .profile-info-about{
   @include text-color;
+}
+
+.block-type-profile-nav {
+  li {
+    border-bottom: none!important;
+    a {
+      color: $sky-blue-light!important;
+      text-decoration: none!important;
+    }
+  }
 }
