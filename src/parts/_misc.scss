@@ -61,3 +61,17 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
 .rating {
   color: $chameleon-shadow !important;
 }
+
+span.dice {
+  span {
+    &.blue {
+      color: $sky-blue-light;
+    }
+    &.red {
+      color: $orange-highlight;
+    }
+    &.green {
+      color: $chameleon-highlight;
+    }
+  }
+}
