@@ -2,7 +2,7 @@
 project_type = :stand_alone
 
 http_images_path = "images"
-css_dir = "build/css"
+css_dir = "css"
 
 sass_dir = "src"
 images_dir = "static/images"
