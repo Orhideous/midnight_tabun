@@ -34,6 +34,7 @@ nav a, .nav a {
 }
 
 textarea, input {
+  color: #d3d7cf !important;
   background-color: inherit !important;
 }
 

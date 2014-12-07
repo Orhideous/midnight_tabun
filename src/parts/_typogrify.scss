@@ -42,5 +42,6 @@ nav, .nav {
 }
 
 textarea, input {
+  @include text-color;
   background-color: inherit !important;
 }
