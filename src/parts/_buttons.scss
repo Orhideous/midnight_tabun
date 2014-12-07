@@ -1,5 +1,5 @@
-@import "../utils/colors";
-@import "../utils/mixins";
+@import "colors";
+@import "mixins";
 
 button {
   & {
@@ -7,7 +7,7 @@ button {
     @include text-color;
   }
   &.button {
-    @include darkboxed;
+    @include greyboxed;
   }
   &.button-primary {
     background: $sky-blue-shadow !important;

@@ -1,5 +1,5 @@
-@import "../utils/colors";
-@import "../utils/mixins";
+@import "colors";
+@import "mixins";
 
 .comment {
   @include no-bg;
@@ -38,4 +38,10 @@
 .comment-author a {
   color: $chocolate-highlight !important;
   text-decoration: none;
+}
+
+.comment-preview {
+  background: $slate;
+  border-color: $slate-highlight;
+  @include rounded;
 }

@@ -1,3 +1,5 @@
+@import "colors";
+
 $rotator: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAA
 AAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAKESURBVDjLdZQ7aFRBFIa/MzMmGPLUGIs
 QH6jEFGKWJGiw8FEovhsLsRAUgrhqI9EqlZDadLFKsBEsIzYq2FiIL9yoQcFAHhtBJGKy9969bnLvHov
@@ -52,5 +54,10 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
   }
 }
 
+.strength {
+  color: $butter-shadow !important;
+}
 
-
+.rating {
+  color: $chameleon-shadow !important;
+}

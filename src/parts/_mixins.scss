@@ -21,6 +21,11 @@
   border-color: $slate !important;
 }
 
+@mixin greyboxed {
+  background: $slate !important;
+  border-color: $slate-shadow !important;
+}
+
 @mixin lightboxed {
   background: $slate-highlight !important;
   border-color: $slate !important;
