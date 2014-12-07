@@ -1,0 +1,21 @@
+@import "mixins";
+
+#blog-mini {
+  @include greyboxed;
+}
+
+#blog {
+  &, footer {
+    @include greyboxed;
+  }
+  .blog-info {
+    li span {
+      @include inh-bg;
+    }
+  }
+  .user-avatar, .admin {
+    a {
+      color: $chocolate-highlight !important;
+    }
+  }
+}
