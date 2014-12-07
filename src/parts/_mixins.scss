@@ -9,7 +9,7 @@
 }
 
 @mixin no-bg {
-  background: none;
+  background: none!important;
 }
 
 @mixin inh-bg {

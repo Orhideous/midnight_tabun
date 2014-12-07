@@ -1,0 +1,18 @@
+@import "mixins";
+@import "colors";
+
+table {
+  tr {
+    & {
+      td, th {
+        border-color: $slate !important;
+      }
+    }
+    &:hover td {
+      background: $slate-dark !important;
+    }
+    .cell-tab-inner.active {
+      @include darkboxed;
+    }
+  }
+}
