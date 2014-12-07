@@ -2,7 +2,7 @@
 @import "mixins";
 
 h1, h2, h3, h4, h5, h6 {
-  color: $aluminium !important;
+  @include text-color;
 }
 
 a {
@@ -21,8 +21,8 @@ blockquote {
   background: $slate-highlight !important;
 }
 
-pre {
-  background: inherit !important;
+pre, ul, li {
+  @include inh-bg;
 }
 
 li.active {
