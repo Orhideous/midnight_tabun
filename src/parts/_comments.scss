@@ -11,7 +11,12 @@
 
   .comment-info {
     li {
-      height: 0.9em;
+      & {
+        height: 0.9em;
+      }
+      &.edit a {
+        color: $chameleon !important;
+      }
     }
   }
 
