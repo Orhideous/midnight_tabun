@@ -192,7 +192,7 @@ section.block-type-profile {
   background: inherit !important;
 }
 
-.form-profile .wrapper-content, .upload-photo {
+.form-profile .wrapper-content, .upload-photo, .profile-page-header {
   background: #393d3c !important;
   border-color: #555753 !important;
 }

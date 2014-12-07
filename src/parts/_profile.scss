@@ -25,6 +25,6 @@ section.block-type-profile {
   @include inh-bg;
 }
 
-.form-profile .wrapper-content, .upload-photo {
+.form-profile .wrapper-content, .upload-photo, .profile-page-header {
   @include darkboxed;
 }
