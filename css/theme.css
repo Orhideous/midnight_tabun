@@ -47,7 +47,11 @@ textarea, input {
   color: #cc7832 !important;
 }
 
-.icon-synio-actions-edit {
+.delete a, .delete span, .delete article.topic .topic-info-comments span.count, article.topic .topic-info-comments .delete span.count {
+  color: #bc3f3c !important;
+}
+
+.icon-synio-actions-edit, .icon-synio-actions-delete {
   display: none !important;
 }
 

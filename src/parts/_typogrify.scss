@@ -58,6 +58,12 @@ textarea, input {
     color: $sand !important;
   }
 }
-.icon-synio-actions-edit {
+.delete {
+  a, span {
+    color: $red !important;
+  }
+}
+
+.icon-synio-actions-edit, .icon-synio-actions-delete {
   @include hidden;
 }
