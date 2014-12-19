@@ -20,12 +20,12 @@
   display: none !important;
 }
 
-@mixin darkboxed {
+@mixin dark_box {
   background: $grey-dark !important;
   border-color: $grey-medium !important;
 }
 
-@mixin greyboxed {
+@mixin grey_box {
   background: $grey-medium;
   border-color: $grey-light !important;
 }

@@ -16,7 +16,7 @@ aside {
     color: $green-light !important;
   }
   section, #block_blogs {
-    @include darkboxed;
+    @include dark_box;
     @include rounded;
     border-bottom: none !important;
     margin: 1em;

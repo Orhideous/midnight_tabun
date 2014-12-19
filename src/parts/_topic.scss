@@ -3,7 +3,7 @@
 
 article.topic {
   &, & div:not(.vote-item) {
-    @include darkboxed;
+    @include dark_box;
     @include rounded;
   }
   .topic-header, .topic-content, .topic-footer {

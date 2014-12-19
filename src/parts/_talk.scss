@@ -1,7 +1,7 @@
 @import "mixins";
 
 #block_talk_search, #block_talk_search_content, .talk-blacklist-form {
-  @include darkboxed;
+  @include dark_box;
   header {
     border: none !important;
   }

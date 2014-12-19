@@ -7,7 +7,7 @@ button {
     @include text-color;
   }
   &.button {
-    @include greyboxed;
+    @include grey_box;
   }
   &.button-primary, &.button-action {
     &.active, &:hover {

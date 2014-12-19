@@ -345,3 +345,8 @@ span.dice span.green, article.topic .topic-info-comments span.dice.count span.gr
   border-color: #3c3f41 !important;
   color: #a9b7c6 !important;
 }
+
+#widemode {
+  background: #3c3f41;
+  border-color: #555753 !important;
+}

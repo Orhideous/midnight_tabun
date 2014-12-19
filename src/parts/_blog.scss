@@ -1,12 +1,12 @@
 @import "mixins";
 
 #blog-mini {
-  @include greyboxed;
+  @include grey_box;
 }
 
 #blog {
   &, footer {
-    @include greyboxed;
+    @include grey_box;
   }
   .blog-info {
     li {

@@ -12,7 +12,7 @@ table {
       background: $grey-medium !important;
     }
     .cell-tab-inner.active {
-      @include darkboxed;
+      @include dark_box;
     }
   }
 }

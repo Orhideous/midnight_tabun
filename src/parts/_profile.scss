@@ -26,5 +26,5 @@ section.block-type-profile {
 }
 
 .form-profile .wrapper-content, .upload-photo, .profile-page-header {
-  @include darkboxed;
+  @include dark_box;
 }

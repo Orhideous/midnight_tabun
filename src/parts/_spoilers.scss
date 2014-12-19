@@ -2,11 +2,11 @@
 @import "colors";
 
 .spoiler-title {
-  @include greyboxed;
+  @include grey_box;
 }
 
 .comment-current .comment-content .spoiler-title {
-  @include darkboxed;
+  @include dark_box;
 }
 
 .spoiler-gray {

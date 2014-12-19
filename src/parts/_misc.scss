@@ -90,6 +90,10 @@ span.dice {
 }
 
 .modal {
-  @include darkboxed;
+  @include dark_box;
   @include text-color;
+}
+
+#widemode {
+  @include grey_box;
 }
