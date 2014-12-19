@@ -2,7 +2,7 @@
 @import "mixins";
 
 article.topic {
-  &, & div {
+  &, & div:not(.vote-item) {
     @include darkboxed;
     @include rounded;
   }
@@ -13,8 +13,8 @@ article.topic {
     @include dark-bg;
     text-decoration: none;
     font-weight: bold;
-    border: 0.15em dashed $plum;
-    color: $plum-highlight;
+    border: 1px dashed $grey-lightest;
+    color: $sand !important;
   }
   .topic-info-comments {
     a {
@@ -22,11 +22,11 @@ article.topic {
     }
     span {
       text-decoration: none !important;
-      color: $chameleon !important;
+      color: $green-medium !important;
     }
     span.count {
       @extend span;
-      color: $chocolate-highlight !important;
+      color: $sand !important;
     }
   }
 }

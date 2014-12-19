@@ -55,23 +55,23 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
 }
 
 .strength {
-  color: $butter-shadow !important;
+  color: $sand !important;
 }
 
 .rating {
-  color: $chameleon-shadow !important;
+  color: $green-medium !important;
 }
 
 span.dice {
   span {
     &.blue {
-      color: $sky-blue-light;
+      color: $blue;
     }
     &.red {
-      color: $orange-highlight;
+      color: $sand;
     }
     &.green {
-      color: $chameleon-highlight;
+      color: $green-light;
     }
   }
 }

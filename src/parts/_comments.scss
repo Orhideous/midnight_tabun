@@ -11,28 +11,35 @@
 
   .comment-info {
     li {
-      &.edit a {
-        color: $chameleon !important;
+      a {
+        &.reply-link {
+          text-decoration: underline !important;
+          border: none;
+        }
+      }
+      &.comment-hide a {
+        color: $aluminium !important;
       }
     }
   }
 
   &.comment-new {
     .comment-content {
-      background: $chameleon-dark !important;
+      background: $green-darkest !important;
     }
   }
 
   &.comment-self {
     .comment-content {
-      background: $scarlet-red-dark !important;
+      background: $red-grey-dark !important;
+      background: $red-grey-light;
     }
   }
 
   &.comment-current {
     .comment-content {
-      background: $slate !important;
-      border-color: $slate-highlight;
+      background: $green-gray-dark !important;
+      border-color: $green-gray-light;
     }
   }
 }
@@ -43,7 +50,7 @@
 }
 
 .comment-preview {
-  background: $slate !important;
-  border-color: $slate-highlight;
+  background: $grey-light !important;
+  border-color: $grey-lightest;
   @include rounded;
 }

@@ -5,7 +5,7 @@
 }
 
 @mixin dark-bg {
-  background: $slate-shadow;
+  background: $grey-darkest;
 }
 
 @mixin no-bg {
@@ -21,18 +21,13 @@
 }
 
 @mixin darkboxed {
-  background: $slate-dark !important;
-  border-color: $slate !important;
+  background: $grey-dark !important;
+  border-color: $grey-medium !important;
 }
 
 @mixin greyboxed {
-  background: $slate;
-  border-color: $slate-shadow !important;
-}
-
-@mixin lightboxed {
-  background: $slate-highlight !important;
-  border-color: $slate !important;
+  background: $grey-medium;
+  border-color: $grey-light !important;
 }
 
 @mixin rounded {

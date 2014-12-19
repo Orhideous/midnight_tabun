@@ -7,22 +7,28 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   &, &:visited {
-    color: $sky-blue-light !important;
+    color: $blue !important;
   }
   &:hover {
-    color: $sky-blue-highlight !important;
+    color: $blue-light !important;
   }
 }
 
 img {
-  opacity: 0.8;
+  & {
+    opacity: 0.7;
+  }
+  &:hover {
+    opacity: 1.0;
+  }
+
 }
 
 blockquote {
   @include text-color;
-  background: $slate !important;
-  border: 2px dashed $slate-highlight !important;
-  border-left: 5px solid $aluminium-shadow !important;
+  background: $grey-medium !important;
+  border: 1px dashed $grey-lightest !important;
+  border-left: 5px solid $aluminium-dark !important;
 }
 
 pre, ul, li {
@@ -31,7 +37,7 @@ pre, ul, li {
 
 li.active {
   a, span {
-    color: $chocolate-highlight !important;
+    color: $sand !important;
   }
 }
 
@@ -44,4 +50,14 @@ nav, .nav {
 textarea, input {
   @include text-color;
   background-color: inherit !important;
+}
+
+
+.edit {
+  a, span {
+    color: $sand !important;
+  }
+}
+.icon-synio-actions-edit {
+  @include hidden;
 }

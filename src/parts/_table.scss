@@ -5,11 +5,11 @@ table {
   tr {
     & {
       td, th {
-        border-color: $slate !important;
+        border-color: $grey-light !important;
       }
     }
     &:hover td {
-      background: $slate-dark !important;
+      background: $grey-medium !important;
     }
     .cell-tab-inner.active {
       @include darkboxed;

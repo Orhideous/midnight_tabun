@@ -9,13 +9,16 @@
     @include greyboxed;
   }
   .blog-info {
-    li span {
-      @include inh-bg;
+    li {
+      span, strong {
+        @include no-bg;
+      }
     }
   }
   .user-avatar, .admin {
     a {
-      color: $chocolate-highlight !important;
+      color: $sand !important;
+      text-decoration: none;
     }
   }
 }
