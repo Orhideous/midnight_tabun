@@ -21,9 +21,6 @@ aside {
     margin: 1em;
   }
   footer {
-    background: inherit
-  }
-  section.running-ponies, section.block-type-pseudomenu {
-    @include hidden;
+    @include inh-bg;
   }
 }
