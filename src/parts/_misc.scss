@@ -1,4 +1,4 @@
-@import "colors";
+@import "utils";
 
 $rotator: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAA
 AAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAKESURBVDjLdZQ7aFRBFIa/MzMmGPLUGIs
@@ -96,4 +96,19 @@ span.dice {
 
 #widemode {
   @include grey_box;
+}
+
+.edit {
+  a, span {
+    color: $sand !important;
+  }
+}
+.delete {
+  a, span {
+    color: $red !important;
+  }
+}
+
+.icon-synio-actions-edit, .icon-synio-actions-delete {
+  @include hidden;
 }

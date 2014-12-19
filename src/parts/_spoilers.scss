@@ -1,5 +1,4 @@
-@import "mixins";
-@import "colors";
+@import "utils";
 
 .spoiler-title {
   @include grey_box;

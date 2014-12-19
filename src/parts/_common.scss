@@ -1,4 +1,4 @@
-@import "mixins";
+@import "utils";
 
 body,
 aside section,
@@ -11,4 +11,58 @@ aside section,
 .comment-info {
   @include dark-bg;
   @include text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include text-color;
+}
+
+a {
+  @include morph(color);
+  @include morph(text-decoration);
+  &, &:visited {
+    color: $blue !important;
+  }
+  &:hover {
+    color: $blue-light !important;
+  }
+}
+
+img {
+  @include morph(opacity);
+  & {
+    opacity: 0.7;
+  }
+  &:hover {
+    opacity: 1.0;
+  }
+
+}
+
+blockquote {
+  @include text-color;
+  background: $grey-medium !important;
+  border: 1px dashed $grey-lightest !important;
+  border-left: 5px solid $aluminium-dark !important;
+}
+
+pre, ul, li {
+  @include inh-bg;
+}
+
+li.active {
+  a, span {
+    color: $sand !important;
+  }
+}
+
+nav, .nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+textarea, input {
+  @include text-color;
+  background-color: inherit !important;
 }

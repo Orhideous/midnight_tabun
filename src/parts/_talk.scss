@@ -1,4 +1,4 @@
-@import "mixins";
+@import "utils";
 
 .talk-search, #block_talk_search_content, .talk-blacklist-form {
   @include dark_box;
