@@ -236,14 +236,14 @@ section.block-type-profile {
 }
 
 /* Restyled */
-#block_talk_search, #block_talk_search_content, .talk-blacklist-form {
+.talk-search, #block_talk_search_content, .talk-blacklist-form {
   background: #313335 !important;
   border-color: #3c3f41 !important;
 }
-#block_talk_search header, #block_talk_search_content header, .talk-blacklist-form header {
+.talk-search header, #block_talk_search_content header, .talk-blacklist-form header {
   border: none !important;
 }
-#block_talk_search .talk-search-content, #block_talk_search_content .talk-search-content, .talk-blacklist-form .talk-search-content {
+.talk-search .talk-search-content, #block_talk_search_content .talk-search-content, .talk-blacklist-form .talk-search-content {
   padding-top: 0;
   border: none;
 }
