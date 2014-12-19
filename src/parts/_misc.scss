@@ -38,6 +38,19 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
   }
 }
 
+.block .block-update {
+  &, &:hover {
+    width: 16px !important;
+    height: 16px !important;
+    background: url($rotator);
+    background-size: 16px !important;
+  }
+  &.active {
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+  }
+}
+
 .toolbar {
   section {
     margin: 0;
