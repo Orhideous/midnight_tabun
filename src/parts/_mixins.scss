@@ -37,3 +37,7 @@
 @mixin padded {
   padding: 0.4em;
 }
+
+@mixin morph($property) {
+  transition: $property 0.3s;
+}

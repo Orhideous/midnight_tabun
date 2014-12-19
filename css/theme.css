@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #a9b7c6 !important;
 }
 
+a {
+  transition: color 0.3s;
+  transition: text-decoration 0.3s;
+}
 a, a:visited {
   color: #287bde !important;
 }
@@ -12,6 +16,9 @@ a:hover {
   color: #5394ec !important;
 }
 
+img {
+  transition: opacity 0.3s;
+}
 img {
   opacity: 0.7;
 }
@@ -188,6 +195,15 @@ article.topic .topic-info-comments span, article.topic .topic-info-comments span
 }
 article.topic .topic-info-comments span.count {
   color: #cc7832 !important;
+}
+article.topic .poll dd div {
+  transition: background 0.3s;
+}
+article.topic .poll dd div {
+  background: #555753 !important;
+}
+article.topic .poll dd div:hover {
+  background: #888a85 !important;
 }
 
 /* Restyled */

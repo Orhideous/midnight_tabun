@@ -29,4 +29,13 @@ article.topic {
       color: $sand !important;
     }
   }
+  .poll dd div {
+    @include morph(background);
+    & {
+      background: $grey-light !important;
+    }
+    &:hover {
+      background: $grey-lightest !important;
+    }
+  }
 }
