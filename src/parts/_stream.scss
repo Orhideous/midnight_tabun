@@ -1,0 +1,18 @@
+@import "utils";
+
+aside {
+  div.search-form-wrapper{
+    @include grey_box;
+  }
+}
+ul.stream-list {
+  .stream-comment-preview {
+    box-shadow: 0 2px 4px $grey-light inset;
+    @include text-color;
+    @include grey_box;
+
+    &::after {
+      border-bottom-color: $grey-light;
+    }
+  }
+}
