@@ -6,7 +6,7 @@ article.topic {
     @include rounded;
   }
   .topic-header, .topic-content, .topic-footer {
-    @include padded;
+    @include padded-medium;
   }
   a[title="Читать дальше"] {
     @include dark-bg;
