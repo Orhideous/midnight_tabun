@@ -112,6 +112,12 @@ aside footer {
   border-color: #3c3f41 !important;
   border-radius: 0.4em;
 }
+.comment .folding {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANAgMAAADK95Z+AAAAC VBMVEUAAAA8P0Gpt8b/KAcMAAAAAXRSTlMAQObYZgAAADBJREFUCNdjYA0NYQwNZWAQYGBkYWBwAEKGA CAPTDNhoZ1WLQhYtQKnPEw/zDyY+QBiQAunMlp2oAAAAABJRU5ErkJggg==") 0 0;
+}
+.comment .folding.folded {
+  background-position: -13px 0;
+}
 .comment .comment-info li a.reply-link {
   text-decoration: underline !important;
   border: none;
@@ -142,13 +148,28 @@ aside footer {
   border-radius: 0.4em;
 }
 
+aside div.search-form-wrapper {
+  background: #3c3f41;
+  border-color: #555753 !important;
+}
+
+ul.stream-list .stream-comment-preview {
+  box-shadow: 0 2px 4px #555753 inset;
+  color: #a9b7c6 !important;
+  background: #3c3f41;
+  border-color: #555753 !important;
+}
+ul.stream-list .stream-comment-preview::after {
+  border-bottom-color: #555753;
+}
+
 article.topic, article.topic div:not(.vote-item) {
   background: #313335 !important;
   border-color: #3c3f41 !important;
   border-radius: 0.4em;
 }
 article.topic .topic-header, article.topic .topic-content, article.topic .topic-footer {
-  padding: 0.4em;
+  padding: 0.6em;
 }
 article.topic a[title="Читать дальше"] {
   background: #2b2b2b;
@@ -324,10 +345,63 @@ span.dice span.green, article.topic .topic-info-comments span.dice.count span.gr
   border-color: #3c3f41 !important;
   color: #a9b7c6 !important;
 }
+.modal.modal-write .write-list li {
+  width: 100px;
+}
+.modal.modal-write .write-list li .write-item-image {
+  width: 64px;
+  height: 70px;
+  background-position: 0 0 !important;
+  transition: opacity 0.3s;
+}
+.modal.modal-write .write-list li .write-item-image {
+  opacity: 0.4;
+}
+.modal.modal-write .write-list li .write-item-image:hover {
+  opacity: 0.8;
+}
+.modal.modal-write .write-list li.write-item-type-message .write-item-image {
+  background: url("http://akushnir.dev.uaprom/msg.png") no-repeat;
+}
+.modal.modal-write .write-list li.write-item-type-blog .write-item-image {
+  background: url("http://akushnir.dev.uaprom/folder.png") no-repeat;
+}
+.modal.modal-write .write-list li.write-item-type-file .write-item-image {
+  background: url("http://akushnir.dev.uaprom/file.png") no-repeat;
+}
+.modal.modal-write .write-list li.write-item-type-topic .write-item-image {
+  background: url("http://akushnir.dev.uaprom/new.png") no-repeat;
+}
+.modal.modal-write .write-list li.write-item-type-draft {
+  padding-right: 0;
+  border-right: none !important;
+}
+.modal.modal-write .write-list li.write-item-type-draft .write-item-image {
+  background: url("http://akushnir.dev.uaprom/draft.png") no-repeat;
+}
 
 #widemode {
   background: #3c3f41;
   border-color: #555753 !important;
+}
+#widemode a {
+  text-decoration: none !important;
+  color: #cc7832 !important;
+}
+#widemode #up-switch, #widemode #down-switch {
+  background: none !important;
+  width: 16px;
+  height: inherit;
+  vertical-align: inherit;
+  bottom: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#widemode #up-switch::before {
+  content: "⇑";
+}
+#widemode #down-switch::before {
+  content: "⇓";
 }
 
 .edit a, .edit span, .edit article.topic .topic-info-comments span.count, article.topic .topic-info-comments .edit span.count {

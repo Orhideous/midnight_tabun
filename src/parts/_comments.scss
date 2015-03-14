@@ -8,6 +8,14 @@
     @include rounded;
   }
 
+  .folding {
+    background: url($folds) 0 0;
+
+    &.folded {
+      background-position: -13px 0;
+    }
+  }
+
   .comment-info {
     li {
       a {
