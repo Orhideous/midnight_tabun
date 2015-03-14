@@ -1,21 +1,5 @@
 @import "utils";
 
-$rotator: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAA
-AAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAKESURBVDjLdZQ7aFRBFIa/MzMmGPLUGIs
-QH6jEFGKWJGiw8FEovhsLsRAUgrhqI9EqlZDadLFKsBEsIzYq2FiIL9yoQcFAHhtBJGKy9969bnLvHov
-ddbMxzmnm8X/z+OfMCBXlHQBabAkAXRUKKVfHgcjRQULbcEAks7xh0kWwl3EA9uJK8g/kLQmT1H20SV2
-x02NKnusoEx/i2EhChbe2MPKJfKNcliEOyyapFopRLZulR46bkHk5J8Ms3HvhAL4QNZnbXKMOUGY0xQL
-QKD20YtnOIOclQQOOwpZiay5wnVrQOUZ1jLRkQWtkm5zhijSzkUOlrTuYJE7oLa0FxmWAJ/FywSfx7Q+
-T0149stIlBziT1DZgTgeix4KyB4BJpyfp1/2VxjuQDunFoDrK0/aVju+Wfg6sNL4I2IS2AjOMxUsVY1+
-lX85yiN00VQCmTeuAFLOVenL6yr3Ot3KAw3KQXdgSULi8BcL2Cv0OYFqZ46F7lN8pvZxgpgDw/7INmCU
-f8rH+k/+A5cIZIgAaWb/oN6wBNRADS+r8GDBg0sYzmE67RddcRclvyV+ULreh2haA9+abwWw1Z6lak6g
-yfTJsnsl9mgvAZ/vS5q2YS3I0JCD4qwwIyCLHTJ+tMY1m3vwE4BeZbm/aU0+9lH/KXxdSDr/KP+2lPPX
-Um850/yrNlLXBtcAPNNAgHdwJu8KWbG22NmwJu4LB4HuggQaLwdWs/fviMrgmbsoNGgCVGYrpTaduRYB
-FhvRutFhfPleWXH0umZta0n8jN5VL5uqzq634TWyXu6ORaCLKRFqMTDQRjSx3x/Z3OSXLyBKKc3RIguI
-nQFrf8zmKZIXfq5I3XtWlgK1Q/AF7ABwS1zBB0QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNC0xMi0wNlQ
-xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
-6MDAWpmWDAAAAAElFTkSuQmCC";
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -42,7 +26,7 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
   &, &:hover {
     width: 16px !important;
     height: 16px !important;
-    background: url($rotator);
+    background: url($rotator-icon);
     background-size: 16px !important;
   }
   &.active {
@@ -57,10 +41,10 @@ xNzo1MDoyMy0wNTowMGf73T8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTQtMTItMDZUMTc6NTA6MjMtMDU
   }
   .toolbar-update .update-comments {
     i {
-      background: url($rotator);
+      background: url($rotator-icon);
     }
     &.active i {
-      background: url($rotator);
+      background: url($rotator-icon);
       -webkit-animation: spin 2s infinite linear;
       animation: spin 2s infinite linear;
     }
@@ -92,10 +76,92 @@ span.dice {
 .modal {
   @include dark_box;
   @include text-color;
+  &.modal-write {
+    .write-list li {
+      width: 100px;
+      .write-item-image {
+        width: 64px;
+        height: 70px;
+        background-position: 0 0 !important;
+        @include morph(opacity);
+        & {
+          opacity: 0.4;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &.write-item-type-message .write-item-image {
+        background: url($message-icon) no-repeat;
+      }
+      &.write-item-type-blog .write-item-image {
+        background: url($blog-icon) no-repeat;
+      }
+      &.write-item-type-file .write-item-image {
+        background: url($file-icon) no-repeat;
+      }
+      &.write-item-type-topic .write-item-image {
+        background: url($topic-icon) no-repeat;
+      }
+      &.write-item-type-draft {
+        padding-right: 0;
+        border-right: none !important;
+        & .write-item-image {
+          background: url($draft-icon) no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.toolbar {
+  i {
+    width: auto;
+    height: 20px;
+    @include morph(opacity);
+    & {
+      opacity: 0.4;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .toolbar-topic a {
+    &.toolbar-topic-prev i {
+      margin-bottom: 10px;
+      background: url("http://akushnir.dev.uaprom/arr_up.png") no-repeat !important;
+    }
+    &.toolbar-topic-next i {
+      margin-top: 10px;
+      background: url("http://akushnir.dev.uaprom/arr_down.png") no-repeat !important;
+    }
+  }
 }
 
 #widemode {
   @include grey_box;
+  a {
+    text-decoration: none !important;
+    color: $sand !important;
+  }
+
+  #up-switch, #down-switch {
+    @include no-bg;
+    width: 16px;
+    height: inherit;
+    vertical-align: inherit;
+    bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  #up-switch::before {
+    content: "⇑";
+  }
+  #down-switch::before {
+    content: "⇓";
+  }
 }
 
 .edit {
@@ -103,6 +169,7 @@ span.dice {
     color: $sand !important;
   }
 }
+
 .delete {
   a, span {
     color: $red !important;
